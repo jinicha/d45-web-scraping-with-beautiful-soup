@@ -12,5 +12,5 @@ title_list = title_list[::-1]
 
 with open("MovieList.txt", "w") as file:
     for title in title_list:
-        file.write(title)
-# print(title_list)
+        file.write(f'{title}\n')
+    print('Finish writing')
