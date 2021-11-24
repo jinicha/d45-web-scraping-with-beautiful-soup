@@ -7,3 +7,6 @@ response = requests.get(URL)
 soup = BeautifulSoup(response.text, "html.parser")
 
 titles = soup.findAll(name="h3", class_="title")
+title_list = [title.get_text() for title in titles]
+
+# print(title_list)
